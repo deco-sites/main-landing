@@ -1,6 +1,6 @@
 {
-  "name": "Test",
-  "path": "/test",
+  "name": "TestCMS",
+  "path": "/cms-test",
   "sections": [
     {
       "__resolveType": "site/sections/Nav.tsx"
@@ -76,5 +76,8 @@
       "__resolveType": "site/sections/Footer.tsx"
     }
   ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
   "__resolveType": "website/pages/Page.tsx"
 }
