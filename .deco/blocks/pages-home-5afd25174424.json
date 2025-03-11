@@ -44,7 +44,7 @@
         {
           "value": {
             "__resolveType": "site/sections/BlogPosts.tsx",
-            "title": "Montenvideo",
+            "title": "Montevideo",
             "posts": [
               {
                 "tags": [],
@@ -59,7 +59,7 @@
             "__resolveType": "website/matchers/location.ts",
             "includeLocations": [
               {
-                "country": "Uruguay"
+                "coordinates": "-32.97010073571075,-56.17802604071097,280372.26258861896"
               }
             ],
             "excludeLocations": []
