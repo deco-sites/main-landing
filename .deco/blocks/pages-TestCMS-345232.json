@@ -67,7 +67,8 @@
             "title": "<p>Texto de prueba para  ambiente staging</p>"
           },
           {
-            "__resolveType": "site/sections/ImageWithParagraph.tsx"
+            "__resolveType": "site/sections/ImageWithParagraph.tsx",
+            "image": "https://data.decoassets.com/main-landing/9d6a121e-3aa1-4dae-94b0-a7f0acb5e8d3/Unsplash-picture.jpg"
           },
           {
             "placement": "right",
@@ -144,7 +145,7 @@
           },
           {
             "__resolveType": "site/sections/Hero.tsx",
-            "title": "<p>Texto de prueba para ambiente staging- VARIANTE 1</p>"
+            "title": "<p>Texto de prueba para ambiente staging- VARIANTE MOBILE</p>"
           },
           {
             "__resolveType": "site/sections/ImageWithParagraph.tsx"
