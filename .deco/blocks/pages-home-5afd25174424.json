@@ -59,8 +59,7 @@
             "__resolveType": "website/matchers/location.ts",
             "includeLocations": [
               {
-                "city": "Montevideo",
-                "country": "uruguay"
+                "country": "Uruguay"
               }
             ],
             "excludeLocations": []
