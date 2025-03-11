@@ -1,90 +1,92 @@
 {
   "name": "Home",
   "path": "/",
-  "sections": {
-    "__resolveType": "website/flags/multivariate.ts",
-    "variants": [
-      {
-        "value": [
-          {
-            "__resolveType": "Header"
-          },
-          {
+  "sections": [
+    {
+      "__resolveType": "Header"
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
             "__resolveType": "site/sections/Hero.tsx",
-            "title": "<p>DESKTOP PAGE </p>",
-            "cta": [],
-            "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-          },
-          {
-            "__resolveType": "site/sections/Logos.tsx"
-          },
-          {
-            "__resolveType": "site/sections/ImageWithParagraph.tsx"
-          },
-          {
-            "__resolveType": "site/sections/ImageWithParagraph.tsx",
-            "placement": "right"
-          },
-          {
-            "__resolveType": "site/sections/BlogPosts.tsx"
-          },
-          {
-            "__resolveType": "site/sections/Testimonials.tsx",
-            "arrows": true
-          },
-          {
-            "__resolveType": "site/sections/Faq.tsx"
-          },
-          {
-            "__resolveType": "Footer"
-          }
-        ],
-        "rule": {
-          "__resolveType": "website/matchers/always.ts"
-        }
-      },
-      {
-        "value": [
-          {
-            "__resolveType": "Header"
-          },
-          {
-            "__resolveType": "site/sections/Hero.tsx",
-            "title": "<p>MOBILE PAGE </p>",
+            "title": "<p>Mobile page </p>",
             "cta": [],
             "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
-            "image": "https://data.decoassets.com/main-landing/8c1f4fc9-fc40-4ef4-b639-63fa345edeeb/charlie-brown.png"
+            "image": "https://data.decoassets.com/main-landing/94a61498-46fc-4384-a17f-9780af3272ed/A-stylized-dark-black-bat-against-a-yellow-circle-background-typically-used-as-a-symbol-in-a-well-known-comic-universe"
           },
-          {
-            "__resolveType": "site/sections/Logos.tsx"
+          "rule": {
+            "__resolveType": "Mobile"
+          }
+        },
+        {
+          "value": {
+            "__resolveType": "site/sections/Hero.tsx",
+            "title": "<p>Allways page </p>",
+            "cta": [],
+            "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away.",
+            "image": "https://data.decoassets.com/main-landing/9d6a121e-3aa1-4dae-94b0-a7f0acb5e8d3/Unsplash-picture.jpg"
           },
-          {
-            "__resolveType": "site/sections/ImageWithParagraph.tsx"
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "image": "https://data.decoassets.com/main-landing/9d6a121e-3aa1-4dae-94b0-a7f0acb5e8d3/Unsplash-picture.jpg"
+    },
+    {
+      "__resolveType": "website/flags/multivariate/section.ts",
+      "variants": [
+        {
+          "value": {
+            "__resolveType": "site/sections/BlogPosts.tsx",
+            "title": "Montenvideo",
+            "posts": [
+              {
+                "tags": [],
+                "title": "aja",
+                "author": "como ",
+                "excerpt": "eh ",
+                "image": "https://data.decoassets.com/main-landing/c144af31-b51a-43ca-855f-92d8370081d8/profile-picture.jpeg"
+              }
+            ]
           },
-          {
-            "__resolveType": "site/sections/ImageWithParagraph.tsx",
-            "placement": "right"
-          },
-          {
+          "rule": {
+            "__resolveType": "website/matchers/location.ts",
+            "includeLocations": [
+              {
+                "city": "Montevideo",
+                "country": "uruguay"
+              }
+            ],
+            "excludeLocations": []
+          }
+        },
+        {
+          "value": {
             "__resolveType": "site/sections/BlogPosts.tsx"
           },
-          {
-            "__resolveType": "site/sections/Testimonials.tsx",
-            "arrows": true
-          },
-          {
-            "__resolveType": "site/sections/Faq.tsx"
-          },
-          {
-            "__resolveType": "Footer"
+          "rule": {
+            "__resolveType": "website/matchers/always.ts"
           }
-        ],
-        "rule": {
-          "__resolveType": "Mobile"
         }
-      }
-    ]
-  },
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "arrows": true
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx"
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
   "__resolveType": "website/pages/Page.tsx",
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
