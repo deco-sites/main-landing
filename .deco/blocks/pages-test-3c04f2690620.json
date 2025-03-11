@@ -67,7 +67,8 @@
     },
     {
       "placement": "right",
-      "__resolveType": "site/sections/ImageWithParagraph.tsx"
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "image": "https://data.decoassets.com/main-landing/8c1f4fc9-fc40-4ef4-b639-63fa345edeeb/charlie-brown.png"
     },
     {
       "__resolveType": "site/sections/BlogPosts.tsx"
